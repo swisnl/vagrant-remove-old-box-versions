@@ -1,38 +1,30 @@
-# Vagrant::Remove::Old::Box::Versions
+# Vagrant remove old box versions plugin
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vagrant/remove/old/box/versions`. To experiment with that code, run `bin/console` for an interactive prompt.
+This plugin enables you to automatically remove old vagrant boxes from you host. Just run ``vagrant remove-old-versions`` and it will check your downloades boxes and remove every box that is not the lastest downloaded version.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'vagrant-remove-old-box-versions'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install vagrant-remove-old-box-versions
+vagrant install plugin vagrant-remove-old-box-versions
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Usage: vagrant remove-old-versions [options]
 
-## Development
+Options:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake false` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    -p, --provider PROVIDER          The specific provider type for the boxes to destroy.
+    -f, --force                      Destroy without confirmation even when box is in use.
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/vagrant-remove-old-box-versions.
+This plugin is built and maintained by [Björn Brala](https://www.swis.nl/)
+Bug reports and pull requests are welcome on GitHub at [swisnl/vagrant-remove-old-box-versions](https://github.com/swisnl/vagrant-remove-old-box-versions).
 
 
 ## License
