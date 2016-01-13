@@ -1,6 +1,6 @@
 # Vagrant remove old box versions plugin
 
-This plugin enables you to automatically remove old vagrant boxes from you host. Just run ``vagrant remove-old-versions`` and it will check your downloades boxes and remove every box that is not the lastest downloaded version.
+This plugin enables you to automatically remove old vagrant boxes from you host. Just run ``vagrant remove-old-versions`` and it will check your downloaded boxes and remove every box that is not the lastest downloaded version.
 
 
 ## Installation
@@ -23,7 +23,7 @@ Options:
 
 ## Contributing
 
-This plugin is built and maintained by [Björn Brala](https://www.swis.nl/)
+This plugin is built and maintained by [Björn Brala](https://www.swis.nl/over-ons/bjorn-brala)
 Bug reports and pull requests are welcome on GitHub at [swisnl/vagrant-remove-old-box-versions](https://github.com/swisnl/vagrant-remove-old-box-versions).
 
 
@@ -31,3 +31,8 @@ Bug reports and pull requests are welcome on GitHub at [swisnl/vagrant-remove-ol
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## Changelog
+
+### [1.0.0] 2016-01-13
+
+* Initial release.
