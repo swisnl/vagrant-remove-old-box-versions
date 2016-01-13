@@ -1,18 +1,21 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'vagrant-remove-old-box-versions/version'
+
+require lib + '/vagrant-remove-old-box-versions/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-remove-old-box-versions"
   spec.version       = VagrantPlugins::RemoveOldVersions::VERSION
   spec.authors       = ["Bjorn Brala"]
   spec.email         = ["bjorn@swis.nl"]
+  spec.platform      = Gem::Platform::RUBY
 
   spec.summary       = "This plugin enables you to remove all but the latest installed boxes."
   spec.description   = "This plugin enables you to remove all but the latest installed boxes."
-  spec.homepage      = "https://github.com/bbrala/vagrant-remove-old-box-versions"
+  spec.homepage      = "https://github.com/swisnl/vagrant-remove-old-box-versions"
   spec.license       = "MIT"
+
 
   # The following block of code determines the files that should be included
   # in the gem. It does this by reading all the files in the directory where
