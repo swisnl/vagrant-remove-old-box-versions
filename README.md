@@ -7,7 +7,7 @@ This plugin enables you to automatically remove old vagrant boxes from you host.
 ## Installation
 
 ```
-vagrant install plugin vagrant-remove-old-box-versions
+vagrant plugin install vagrant-remove-old-box-versions
 ```
 
 ## Usage
