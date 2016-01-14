@@ -2,6 +2,8 @@
 
 This plugin enables you to automatically remove old vagrant boxes from you host. Just run ``vagrant remove-old-versions`` and it will check your downloaded boxes and remove every box that is not the lastest downloaded version.
 
+Internally it uses ```vagrant box list``` to get a list of boxes, and ```vagrant box remove --version xxx``` so it still has all safeguards you expect from vagrant.
+
 [![Gem Version](https://badge.fury.io/rb/vagrant-remove-old-box-versions.svg)](https://badge.fury.io/rb/vagrant-remove-old-box-versions)
 
 ## Installation
