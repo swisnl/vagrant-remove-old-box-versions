@@ -20,6 +20,8 @@ Usage: vagrant remove-old-versions [options]
 Options:
 
     -p, --provider PROVIDER          The specific provider type for the boxes to destroy.
+    -n, --dry-run                    Only print the boxes that would be removed.
+        --name NAME                  The specific box name to destroy.
     -f, --force                      Destroy without confirmation even when box is in use.
 ```
 
