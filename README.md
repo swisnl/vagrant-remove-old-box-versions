@@ -37,6 +37,10 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Changelog
 
+### [1.1.0] 2016-03-16
+
+* `---dry-run` and `--name` option added by @danielpanteleit
+
 ### [1.0.0] 2016-01-13
 
 * Initial release.
