@@ -1,10 +1,12 @@
+**The code for this plugin [has been merged into Vagrant](https://github.com/mitchellh/vagrant/pull/7978) and will be released in release 1.9.0. The command was renamed to ``vagrant box prune``.**
+
 # Vagrant remove old box versions plugin
 
 This plugin enables you to automatically remove old vagrant boxes from you host. Just run ``vagrant remove-old-versions`` and it will check your downloaded boxes and remove every box that is not the lastest downloaded version.
 
 Internally it uses ```vagrant box list``` to get a list of boxes, and ```vagrant box remove --box-version  xxx --provider xxx``` so it still has all safeguards you expect from vagrant.
 
-[![Gem Version](https://badge.fury.io/rb/vagrant-remove-old-box-versions.svg)](https://badge.fury.io/rb/vagrant-remove-old-box-versions) [![Gem](https://img.shields.io/gem/dv/vagrant-remove-old-box-versions/1.1.0.svg?maxAge=2592000)](https://rubygems.org/gems/vagrant-remove-old-box-versions)
+[![Gem Version](https://badge.fury.io/rb/vagrant-remove-old-box-versions.svg)](https://badge.fury.io/rb/vagrant-remove-old-box-versions) [![Gem](https://img.shields.io/gem/dv/vagrant-remove-old-box-versions/1.1.0.svg?maxAge=43200)](https://rubygems.org/gems/vagrant-remove-old-box-versions).
 
 ## Installation
 
