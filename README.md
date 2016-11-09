@@ -1,3 +1,5 @@
+**The code for this plugin has been merged into Vagrant and is released in `1.9.0`. The command is ``vagrant box prune``. See the [pull request](https://github.com/mitchellh/vagrant/pull/7978).**
+
 # Vagrant remove old box versions plugin
 
 This plugin enables you to automatically remove old vagrant boxes from you host. Just run ``vagrant remove-old-versions`` and it will check your downloaded boxes and remove every box that is not the lastest downloaded version.

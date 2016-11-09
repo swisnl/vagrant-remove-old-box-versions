@@ -1,13 +1,35 @@
 require 'optparse'
 
+
 module VagrantPlugins
   module RemoveOldVersions
     class Command < Vagrant.plugin("2", :command)
       def self.synopsis
-        "remove all but the latest installed boxes"
+        'remove all but the latest installed boxes'
       end
 
       def execute
+
+        vagrant_version = Gem::Version.new(Vagrant::VERSION)
+        unless Gem::Requirement.new('< 1.9.0').satisfied_by?(vagrant_version)
+          @env.ui.warn('This plugin has been merged into Vagrant 1.9.0, please use the command: ');
+          puts
+          @env.ui.warn("'vagrant box prune'");
+          puts
+
+          # Ask the user if we should do this
+          stack = Vagrant::Action::Builder.new.tap do |b|
+            b.use Vagrant::Action::Builtin::Confirm, 'Are you sure you want to use this deprecated method? [yN] ', false
+          end
+
+          result = @env.action_runner.run(stack)
+          if !result[:result]
+            @env.ui.info('Command aborted.');
+            return
+          end
+        end
+
+
         options = {}
         options[:force] = false
         options[:dry_run] = false
