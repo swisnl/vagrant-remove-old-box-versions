@@ -1,4 +1,4 @@
-**The code for this plugin [has been merged into Vagrant](https://github.com/mitchellh/vagrant/pull/7978) and will be released in release 1.9.0. The command was renamed to ``vagrant box prune``.**
+**The code for this plugin has been merged into Vagrant and is released in `1.9.0`. The command is ``vagrant box prune``. See the [pull request](https://github.com/mitchellh/vagrant/pull/7978).**
 
 # Vagrant remove old box versions plugin
 
