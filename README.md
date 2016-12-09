@@ -39,6 +39,10 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Changelog
 
+### [1.2.0] 2016-12-09
+
+* This plugin was merged into Vagrant. Added deprecation message.
+
 ### [1.1.0] 2016-03-16
 
 * `---dry-run` and `--name` option added by @danielpanteleit
